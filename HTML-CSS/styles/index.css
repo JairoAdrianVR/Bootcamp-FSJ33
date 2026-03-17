@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+
+/* PSEUDOCLASE root nos sirve para agregar datos en la raiz de nuestro css  
+    Uso comun: Declarar variables */
+:root{
+    --primary-color: #f56003; /* Variable en CSS */
+    --second-color: #e906d6; /* Variable en CSS */
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: gray !important;
+    background-image: url(../assets/images/background-adare-restaurant.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 80vw;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container .heading{
+    height: 20vh;
+}
+
+.container .heading .navigation{
+    width: 40vw;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container .heading .navigation .nav-item{
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+
+
+    &:hover{
+        color: var(--primary-color);
+        scale: 1.1;
+        text-decoration: underline;
+    }
+}
+
+.container .main-container{
+    margin-top: 2vh;
+}
+
+.container .main-container .main-text{
+    color: white;
+    font-size: 3.5em;
+    font-family: "Pacifico", cursive;
+
+   /* SINTAXIS OPCIONAL PARA ACTIVAR EL HOVER O UNA PSEUDOCLASE
+     &:hover{
+    text-shadow: 0.1em 0.1em var(--second-color);
+}*/
+ transition:all 0.5s;
+}
+
+.container .main-container .main-text:hover{
+    scale: 0.96;
+    text-shadow: 0.1em 0.1em var(--second-color);
+    transition:all 0.4s;
+}
+
+
+.container .main-container article{
+    max-width: 40vw;
+    margin: 0 auto;
+}
+
+.container .main-container .main-p-text{
+    color: gray;
+    font-size: 1.1em;
+    max-width: 40vw;
+    font-family: "Inter", sans-serif;
+    /* Font weight me deja colocar un valor de 100 a 900 para setear la fuente en bold o el ancho de la fuente
+    font-weight: 100;
+    */
+    font-weight: 500;
+}
+
+.container .main-container .main-p-text strong{
+    color: white;
+    text-shadow: 0.1em 0.1em var(--second-color);
+}
+
+.container .main-container .maps-container{
+    margin: 2em auto;
+}
+
+.container .main-container .maps-container .maps{
+    height: 45vh;
+    width: 60vw;
+}
+
+
+.container .footer h4{
+    color: rgba(255, 255, 255, 0.73);
+}
