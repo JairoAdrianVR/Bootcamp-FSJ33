@@ -14,4 +14,4 @@ git checkout -b <nombre_rama> -> Crea una nueva rama y nos mueve a ella (quedamo
 ------ GITHUB ----- 
 git remote add origin <url> -> Enlaza nuestro repo local con un repositorio remoto
 git push -u origin <nombre_rama> -> Envia los cambios a github
-git clone 
+git clone -> mensaje de descripcion
