@@ -1,14 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practica Bootstrap conceptos</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-</head>
-<body class="bg-secondary">
-    <header class="bg-info">
-        <h1>Holiwis</h1>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Practica Bootstrap conceptos</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/styles/index.css">
+    </head>
+    <body class="bg-secondary">
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    
+    <div class="container">
+    <main class="mt-3">
+        <form class="row bg-white p-3 rounded-4">
+            <article class="col-3">
+            <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+            </article>
+            <article class="col-3">
+            <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+            </article>
+            <article class="col-3">
+            <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+            </article>
+            <article class="col-2">
+                <button class="btn btn-danger">Buscar</button>
+            </article>
+        </form>
+    </main>
+
+    <section class="row mt-3">
+
+        <div class="card col-3" >
+  <img src="./assets/images/Cascada Las Pilas, Joya Natural en Morazán _ Guanacos.png" class="card-img-top" alt="imagen-cascadas-las-pilas-reserva-nacional">
+  <div class="card-body">
+    <h5 class="card-title">Cascadas Las Pilas</h5>
+    <p class="card-text">Reserva nacional de Arambala</p>
+    <a href="#" class="btn btn-primary">Reservar</a>
+  </div>
+</div>
+
+<div class="card col-3">
+  <img src="https://media.q4launch.website/uploads/sites/77/2024/05/IMG_8030_Roatan-scaled.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Isla Roatan</h5>
+    <p class="card-text">Isla paradisiaca con el  segundo coral arrecife mas grande del mundo</p>
+    <a href="#" class="btn btn-primary">Reservar</a>
+  </div>
+</div>
+<div class="card col-3" >
+  <img src="https://lacabanga.com/wp-content/uploads/2017/05/DSC02972.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Calzada de amador</h5>
+    <p class="card-text">Lugar turistico que conecta con 3 islas, sirve como embarcadero para diferentes islas.</p>
+    <a href="#" class="btn btn-primary">Reservar</a>
+  </div>
+</div>
+<div class="card col-3">
+  <img src="https://5.panamausa.org/wp-content/uploads/2023/09/escudo-de-veraguas-panama-0108.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Isla escudo de Veraguas</h5>
+    <p class="card-text">Paraiso natural protegido que se ubica en el caribe panameño</p>
+    <a href="#" class="btn btn-primary">Reservar</a>
+  </div>
+</div>
+    </section>
+    </div>
 </body>
 </html>
