@@ -110,3 +110,50 @@ do{
     console.log(`El contador es menor que 10, su valor es ${contador}`);
     contador++;
 }while(contador > 0 && contador < 10)
+
+// Funciones
+// Funcion expresada
+function saludar(){
+    console.log("Holiwis te saludo desde la funcion");
+}
+
+//Llamar o ejecutar una funcion
+saludar();
+
+//Funciones anonimas
+const fnAnonima = function (){
+    console.log("Soy una funcion anonima");
+}
+
+fnAnonima();
+
+// Callback -> UNA FUNCION QUE RECIBE OTRA FUNCION PARA SU EJECUCION
+// PARAMETROS -> Son valores con los que puede trabajar una funcion
+function calcAumento(valor){
+    let aumento = valor*0.5;
+    return aumento;
+}
+
+function calcPrecioFinal(precio,fnCalculoAumento){
+    precio = parseFloat(precio);
+    let aumento = fnCalculoAumento(precio)
+    let resultado = precio+aumento; //"50"+25
+    console.log(resultado);
+}
+
+//prompt -> funcion del navegador para ingresar datos a traves de un modal de dialogo
+let inputUsuarioPrecio = prompt("Ingrese el precio de su producto:");
+
+calcPrecioFinal(inputUsuarioPrecio,calcAumento);
+
+
+// Realiza una funcion que dado un nombre y una edad, salude a ese usuario
+
+function saludarUsuario(nombre,edad){
+
+    let mensaje = `Hola ${nombre} como estas? Tu edad es: ${edad}?`
+    console.log(mensaje);
+}
+
+saludarUsuario("Jairo",75);
+saludarUsuario("Valerie",21);
