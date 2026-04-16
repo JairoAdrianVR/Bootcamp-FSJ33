@@ -157,3 +157,38 @@ function saludarUsuario(nombre,edad){
 
 saludarUsuario("Jairo",75);
 saludarUsuario("Valerie",21);
+
+//Console.log vs return en las funciones
+//return devuelve el dato para ser reutilizado y no lo imprime
+//console.log no devuelve el dato y solo lo imprime
+
+function retornarLaSuma(num1,num2){
+    let resultadoSuma = num1 + num2;
+    return resultadoSuma;
+}
+
+
+
+let resultado = retornarLaSuma(23,67);
+let total = resultado * 2;
+console.log(total);
+
+
+
+function imprimirLaSuma(num1,num2){
+    console.log(num1+num2);
+}
+
+let resultadito = imprimirLaSuma(5,23);
+console.log(resultadito);
+
+let totalito = resultadito * 2;
+console.log(totalito);
+ 
+
+function saluditoUsuario(){
+    console.log(`Holiwis usuario, como estas?`);
+    return `Holiwis usuario, como estas?`;
+}
+
+saluditoUsuario();
