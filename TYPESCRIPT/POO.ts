@@ -26,10 +26,7 @@ class Curso{
 //Crear o instanciar un objeto
 let cursito = new Curso("FSJ33");
 console.log(cursito);
-console.log(cursito.grabarClase())
-
-
-;
+console.log(cursito.grabarClase());
 
 let holiwis = "holiwis";
 
